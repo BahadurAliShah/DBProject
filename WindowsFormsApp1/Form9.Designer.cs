@@ -52,10 +52,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Courier New", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(204, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(272, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 31);
+            this.label1.Size = new System.Drawing.Size(197, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employees";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -66,13 +65,13 @@
             this.cnicList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cnicList.Font = new System.Drawing.Font("Candara", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cnicList.FormattingEnabled = true;
-            this.cnicList.ItemHeight = 17;
+
+            this.cnicList.ItemHeight = 22;
             this.cnicList.Items.AddRange(new object[] {
             "snfsmf"});
-            this.cnicList.Location = new System.Drawing.Point(9, 119);
-            this.cnicList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cnicList.Location = new System.Drawing.Point(12, 146);
             this.cnicList.Name = "cnicList";
-            this.cnicList.Size = new System.Drawing.Size(76, 221);
+            this.cnicList.Size = new System.Drawing.Size(101, 286);
             this.cnicList.TabIndex = 1;
             // 
             // label2
@@ -83,16 +82,19 @@
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 84);
+
             this.label2.TabIndex = 2;
             this.label2.Text = "Shift:";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+
             this.checkBox1.Location = new System.Drawing.Point(209, 49);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(51, 17);
+
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Night";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -100,10 +102,13 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+
             this.checkBox2.Location = new System.Drawing.Point(283, 49);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(45, 17);
+
+
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "Day";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -111,10 +116,13 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+
             this.checkBox3.Location = new System.Drawing.Point(350, 49);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(65, 17);
+
+
             this.checkBox3.TabIndex = 5;
             this.checkBox3.Text = "Evening";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -122,10 +130,13 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
+
             this.listBox2.Location = new System.Drawing.Point(98, 119);
             this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(103, 238);
+
+
             this.listBox2.TabIndex = 6;
             // 
             // listBox3
@@ -135,24 +146,30 @@
             this.listBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(79, 238);
+
+
             this.listBox3.TabIndex = 7;
             // 
             // listBox4
             // 
             this.listBox4.FormattingEnabled = true;
+            
             this.listBox4.Location = new System.Drawing.Point(318, 119);
             this.listBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(57, 238);
+            
             this.listBox4.TabIndex = 8;
             // 
             // listBox5
             // 
             this.listBox5.FormattingEnabled = true;
+            
             this.listBox5.Location = new System.Drawing.Point(394, 119);
             this.listBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(83, 238);
+            
             this.listBox5.TabIndex = 9;
             // 
             // listBox6
@@ -162,6 +179,8 @@
             this.listBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox6.Name = "listBox6";
             this.listBox6.Size = new System.Drawing.Size(104, 238);
+
+
             this.listBox6.TabIndex = 10;
             // 
             // label3
@@ -170,7 +189,7 @@
             this.label3.Location = new System.Drawing.Point(9, 96);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+
             this.label3.TabIndex = 11;
             this.label3.Text = "label3";
             // 
@@ -181,6 +200,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
+
             this.label4.TabIndex = 12;
             this.label4.Text = "label4";
             // 
@@ -191,16 +211,20 @@
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
+
+
             this.label5.TabIndex = 13;
             this.label5.Text = "label5";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            
             this.label6.Location = new System.Drawing.Point(316, 96);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
+            
             this.label6.TabIndex = 14;
             this.label6.Text = "label6";
             // 
@@ -241,6 +265,8 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.button1);
+
+
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
