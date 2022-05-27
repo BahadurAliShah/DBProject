@@ -95,6 +95,11 @@ primary key(Stock_ID, Purchase_ID),
 Quantity int,
 Purchase_Price int);
 
+CREATE TABLE Login
+(
+	userName varchar(20) NOT NULL PRIMARY KEY,
+	password varchar(50) NOT NULL
+)
 
 insert into Items values(1, 5, 300),
 (2, 10, 700),
@@ -240,3 +245,6 @@ insert into Purchased_Items values
 	(4, 2, 10, 50),
 	(3, 3, 10, 800),
 	(4, 3, 10, 50);
+	
+
+Insert into Login VALUES ('admin', '0644503CBFC425ADABD72095739CB720F5BB7026');
