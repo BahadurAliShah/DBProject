@@ -60,7 +60,6 @@
             this.cnicList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cnicList.Font = new System.Drawing.Font("Candara", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cnicList.FormattingEnabled = true;
-
             this.cnicList.ItemHeight = 22;
             this.cnicList.Items.AddRange(new object[] {
             "snfsmf"});
@@ -68,7 +67,6 @@
             this.cnicList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cnicList.Name = "cnicList";
             this.cnicList.Size = new System.Drawing.Size(776, 286);
-
             this.cnicList.TabIndex = 1;
             // 
             // label2
@@ -78,7 +76,6 @@
             this.label2.Location = new System.Drawing.Point(184, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 100);
-
             this.label2.TabIndex = 2;
             this.label2.Text = "Shift:";
             // 
@@ -89,7 +86,6 @@
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(60, 20);
-
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Night";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -102,7 +98,6 @@
             this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(54, 20);
-
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "Day";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -119,14 +114,13 @@
             this.checkBox3.Text = "Evening";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-          // 
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 16);
-
             this.label3.TabIndex = 11;
             this.label3.Text = "CNIC";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -137,7 +131,6 @@
             this.label4.Location = new System.Drawing.Point(131, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
-
             this.label4.TabIndex = 12;
             this.label4.Text = "Name";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -147,9 +140,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(296, 117);
             this.label5.Name = "label5";
-
-          this.label5.Size = new System.Drawing.Size(44, 16);
-
+            this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 13;
             this.label5.Text = "label5";
             // 
@@ -159,7 +150,6 @@
             this.label6.Location = new System.Drawing.Point(421, 118);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 16);
-
             this.label6.TabIndex = 14;
             this.label6.Text = "label6";
             // 
@@ -199,8 +189,6 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-
-
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

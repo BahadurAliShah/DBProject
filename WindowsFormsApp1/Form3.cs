@@ -23,5 +23,12 @@ namespace WindowsFormsApp1
             empshift.Show();
             Visible = false;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form10 storeItems = new Form10();
+            storeItems.Show();
+            Visible = false;
+        }
     }
 }
