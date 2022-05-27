@@ -10,30 +10,32 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form3 : Form
+    public partial class Form11 : Form
     {
-        public Form3()
+        public Form11()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Form11 empshift = new Form11();
-            empshift.Show();
+            Form3 menu = new Form3();
+            menu.Show();
             Visible = false;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Form10 storeItems = new Form10();
-            storeItems.Show();
+            Form9 shifts = new Form9();
+            shifts.Show();
             Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Form12 addemp = new Form12();
+            addemp.Show();
+            Visible = false;
         }
     }
 }

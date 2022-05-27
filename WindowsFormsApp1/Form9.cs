@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
 
         private void getRecords()
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VC0SEII\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7QOMIT9\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
             conn.Open();
             SqlCommand comm;
             string query = "SELECT * FROM Employee WHERE E_shift IN ";
@@ -70,8 +70,8 @@ namespace WindowsFormsApp1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 menu = new Form3();
-            menu.Show();
+            Form11 empmenu = new Form11();
+            empmenu.Show();
             Visible = false;
         }
 
