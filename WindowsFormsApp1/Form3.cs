@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form11 empshift = new Form11();
+            Form9 empshift = new Form9();
             empshift.Show();
             Visible = false;
         }
@@ -29,11 +29,6 @@ namespace WindowsFormsApp1
             Form10 storeItems = new Form10();
             storeItems.Show();
             Visible = false;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

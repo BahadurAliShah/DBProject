@@ -53,7 +53,7 @@ namespace WindowsFormsApp1
         }
         private string getRecords(string userName, string password)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7QOMIT9\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VC0SEII\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
             conn.Open();
             SqlCommand comm;
             string query = "SELECT * FROM Login WHERE userName = '"+userName+"' AND password = '"+password+"';";
