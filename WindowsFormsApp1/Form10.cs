@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
 
         private void avialableItems( )
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VC0SEII\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7QOMIT9\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
             conn.Open();
             SqlCommand comm;
             string query = "SELECT itm.*, ist.* FROM Items as itm, In_Store as ist WHERE itm.Item_ID = ist.Item_ID;";
@@ -48,6 +48,13 @@ namespace WindowsFormsApp1
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 menu = new Form3();
+            menu.Show();
+            Visible = false;
         }
     }
 }
