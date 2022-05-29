@@ -32,19 +32,51 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int custid = int.Parse(textBox1.Text);
-            string name = textBox2.Text;
-            double cnic = double.Parse(textBox3.Text);
-            string number = textBox4.Text;
-            string q = "select Sold.Cust_ID, Sold.Sold_ID, Sold.Sold_Date, Sold.Bill_amount, Customer_Items.Quantity from [dbo].[Sold] join [dbo].[Customer_Items] on Sold.Sold_ID = Customer_Items.Sold_Id where Sold.Cust_ID = " + custid + ";";
+            string custid = textBox1.Text.ToString();
+            string query = "select Customer.*, Sold.Cust_ID, Sold.Sold_ID, Sold.Sold_Date, Sold.Bill_amount, Customer_Items.Quantity from [dbo].[Sold] join [dbo].[Customer_Items] on Sold.Sold_ID = Customer_Items.Sold_Id join Customer on Customer.ID = Sold.Cust_ID Where ";
+            if (comboBox1.SelectedItem.ToString() == "Sold ID")
+            {
+                query += " Sold.Cust_ID = " + custid + ";";
+            }else if (comboBox1.SelectedItem.ToString() == "Name")
+            {
+                query += " Customer.Name Like " + custid + ";";
+            }
+            else if (comboBox1.SelectedItem.ToString() == "CNIC")
+            {
+                query += " Customer.CNIC = " + custid + ";";
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Phone No")
+            {
+                query += " Customer.Phone_No Like " + custid + ";";
+            }
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7QOMIT9\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
             conn.Open();
-            SqlCommand cmd = new SqlCommand(q, conn);
+            SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             conn.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label2.Text = comboBox1.SelectedItem.ToString()+":";
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
