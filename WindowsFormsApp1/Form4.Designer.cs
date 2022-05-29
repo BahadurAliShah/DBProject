@@ -1,4 +1,3 @@
-﻿
 namespace WindowsFormsApp1
 {
     partial class Form4
@@ -29,8 +28,17 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.projectDataSet = new WindowsFormsApp1.ProjectDataSet();
+            this.customerItemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customer_ItemsTableAdapter = new WindowsFormsApp1.ProjectDataSetTableAdapters.Customer_ItemsTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerItemsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,16 +59,55 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 1;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(240, 81);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(343, 189);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // projectDataSet
+            // 
+            this.projectDataSet.DataSetName = "ProjectDataSet";
+            this.projectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customerItemsBindingSource
+            // 
+            this.customerItemsBindingSource.DataMember = "Customer_Items";
+            this.customerItemsBindingSource.DataSource = this.projectDataSet;
+            // 
+            // customer_ItemsTableAdapter
+            // 
+            this.customer_ItemsTableAdapter.ClearBeforeFill = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(370, 276);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Generate";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerItemsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,5 +117,10 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private ProjectDataSet projectDataSet;
+        private System.Windows.Forms.BindingSource customerItemsBindingSource;
+        private ProjectDataSetTableAdapters.Customer_ItemsTableAdapter customer_ItemsTableAdapter;
+        private System.Windows.Forms.Button button2;
     }
 }
