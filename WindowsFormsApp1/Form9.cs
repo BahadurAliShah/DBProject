@@ -21,11 +21,6 @@ namespace WindowsFormsApp1
             getRecords();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void getRecords()
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VC0SEII\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True");
@@ -53,7 +48,7 @@ namespace WindowsFormsApp1
 
             cnicList.Items.Clear();
             String empDetails = "{0, -40}{1, -35}{2, -30}{3, -25}{4, -16}{5, -25}";
-            cnicList.Items.Add(String.Format(empDetails, "CNC", "Name", "Starting Date", "Shift", "Salary", "Manager ID"));
+            cnicList.Items.Add(String.Format(empDetails, "CNIC", "Name", "Starting Date", "Shift", "Salary", "Manager ID"));
             empDetails = "{0, -25}{1, -25}{2, -30}{3, -25}{4, -16}{5, -25}";
             while (result.Read())
             {
@@ -100,5 +95,20 @@ namespace WindowsFormsApp1
             getRecords();
         }
 
+        private void cnicList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cnicList_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            string cnic = "";
+            for (int i = 0; cnicList.SelectedItem.ToString()[i] != ' '; i++)
+                cnic += cnicList.SelectedItem.ToString()[i];
+            Form7 menu = new Form7();
+            menu.cnicOfSelectedEmployee = cnic;
+            menu.Show();
+            //Visible = false;
+        }
     }
 }
